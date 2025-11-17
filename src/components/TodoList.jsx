@@ -1,9 +1,11 @@
 import TodoListItem from "./TodoListItem";
 
-export default function TodoList() {
+export default function TodoList({ todos }) {
   return (
     <ul className="list-reset">
-      <TodoListItem />
+      {todos.map((todo) => (
+        <TodoListItem todo={todo} />
+      ))}
     </ul>
   );
 }
