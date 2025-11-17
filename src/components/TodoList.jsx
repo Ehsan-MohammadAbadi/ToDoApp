@@ -2,7 +2,7 @@ import TodoListItem from "./TodoListItem";
 
 export default function TodoList() {
   return (
-    <ul class="list-reset">
+    <ul className="list-reset">
       <TodoListItem />
     </ul>
   );
