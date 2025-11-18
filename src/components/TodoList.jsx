@@ -3,8 +3,8 @@ import TodoListItem from "./TodoListItem";
 export default function TodoList({ todos }) {
   return (
     <ul className="list-reset">
-      {todos.map((todo) => (
-        <TodoListItem todo={todo} />
+      {todos.map((todo, index) => (
+        <TodoListItem todo={todo} key={index} />
       ))}
     </ul>
   );
